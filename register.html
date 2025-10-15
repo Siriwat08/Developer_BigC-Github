@@ -30,7 +30,7 @@ input{width:100%;padding:10px;margin-top:6px;border:1px solid #ddd;border-radius
 <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
 <script>
 const LIFF_ID = 'YOUR_LIFF_ID';
-const GAS_WEB_APP_URL = 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL';
+const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbwwq5BH_K2FwTG5vyjFjtBhpZCGY1DIdanjFYFi1XOkwUF5j9eT3EqFmYlZOfg-t4-FVw/exec';
 
 function serverCall(action,args){
   return fetch(GAS_WEB_APP_URL,{method:'POST',headers:{'Content-Type':'application/json'},mode:'cors',body: JSON.stringify({action, args})})
