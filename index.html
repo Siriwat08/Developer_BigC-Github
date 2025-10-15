@@ -21,7 +21,7 @@ function serverCall(action,args){
     if(j.status==='error') throw new Error(j.message||'server error');
     return j.response;
   });
-}
+} 
 
 (async function(){
   try{
